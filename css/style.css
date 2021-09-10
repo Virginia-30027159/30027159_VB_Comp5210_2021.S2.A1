@@ -1,0 +1,141 @@
+
+body{
+    background-repeat: no-repeat, repeat;
+    padding-top: 70px;
+    padding-bottom:60px;
+}
+main {
+  padding-bottom: 140px;
+}
+ol {
+  
+    border: 2px dashed gray;
+  }
+  ol li {
+    background: #501e274d;
+    margin: 20px;
+
+    border: 2px solid gray;
+  }
+.navbar{
+position: fixed;
+transition: 1s;
+background-color: #501e2763;
+display:inline-block;
+max-height: 80px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.navbar.navbar-inverse {
+  border: none;
+}
+.navbar .navbar-brand {
+  padding-top: 1px;
+  height: 80px;
+  line-height: 80px;
+}
+.navbar .navbar-brand img {
+  height: auto;
+  width: auto;
+  max-height: 72px;
+  max-width: 250px;
+}
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+.icon-bar{
+background-color: #000;
+
+}
+.nav{
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: #fff;
+    padding: 20px 10px 0 10px;
+    font-weight: 600;
+    background-color: #501e2763;
+    display:inline-block;
+    max-height: 90px;
+}
+.nav li{
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    display:inline-block;
+    max-height: 80px;
+}
+.nav li:after{
+content: '';
+display: block;
+  border-bottom: 2px solid #81817c;
+  transform: scaleX(0);
+  transition: .2s ease-in-out;
+}
+.nav li:hover:after{
+   transform: scaleX(1);
+}
+.para{
+min-height: 400px;
+}
+.para h3{
+text-align: center;
+margin-top: 5%;
+color: #501e27;
+font-size: 26px;
+font-weight: 600;
+}
+
+body::-webkit-scrollbar-track
+{
+    -webkit-box-align: inset 0 0 6px rgba(0,0,0,0.3);
+
+}
+body::-webkit-scrollbar
+{
+width: 14px;
+}
+
+body::-webkit-scrollbar-thumb
+{
+
+ -webkit-box-align: inset 0 0 6px rgba(0,0,0,.5);
+background:  #501e27;
+}
+@media(max-width: 768px){
+  body{
+  background-size: 100% 100%;
+  }
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+      font-size: 16px;
+      display:inline-block;
+      max-height: 70px;
+    font-family: Arial, Helvetica, sans-serif !important;
+     margin-bottom: 10px;
+     margin-top: 0;
+  }
+  .navbar-collapse{
+  background: #501e27;
+  }
+  nav .navbar-nav ul li ul {
+    display:none;
+  }
+    nav .navbar-nav ul li:hover > ul {
+        display:block;
+    }
+  .para{
+  min-height: 800px;
+  }
+}
+.file{
+padding: 10px;
+border: 2px dashed gray;
+margin: 10px;    
+}
+.welcome{
+  padding: 10px;
+border: 2px dashed gray;
+margin: 10px;  
+text-align: center;
+font-weight: bold;
+}
